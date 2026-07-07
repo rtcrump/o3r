@@ -1,6 +1,5 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   eleventyConfig.addFilter("findProject", function (projectIds, projects) {
     if (!Array.isArray(projectIds) || !Array.isArray(projects)) {

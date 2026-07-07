@@ -5,7 +5,7 @@
   "heroSummary": "We build outcome measures, evidence infrastructure, and clinical tools that make ocular oncology research usable in real care.",
   "heroDetail": "Our lab is virtual-first, project-driven, and builder-oriented. We combine clinical expertise, health services research, AI methods, and reproducible data infrastructure.",
   "affiliation": "University of Calgary",
-  "contactEmail": "contact@o3r.ca",
+  "contactEmail": "rtcrump@gmail.com",
   "piName": "Trafford Crump, PhD",
   "piRole": "Principal Investigator",
   "piSummary": "Health services researcher focused on measurement frameworks, real-world evidence, and practical clinical systems.",
@@ -20,5 +20,5 @@
     "title": "O3R | Ocular Oncology Outcomes Research",
     "description": "O3R builds measurement systems for ocular oncology: outcome measures, clinical data infrastructure, and decision-support tools for real-world care."
   },
-  "siteUrl": "https://o3r.ca"
+  "siteUrl": "https://rtcrump.github.io/o3r"
 }
