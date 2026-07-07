@@ -1,0 +1,14 @@
+{
+  "name": "labsite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Single-page Eleventy lab website for GitHub Pages.",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "debug": "npx @11ty/eleventy --quiet=false"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

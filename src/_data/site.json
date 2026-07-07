@@ -1,0 +1,24 @@
+{
+  "labName": "Ocular Oncology Outcomes Research",
+  "shortName": "O3R",
+  "tagline": "Measurement systems for real-world ocular oncology care.",
+  "heroSummary": "We build outcome measures, evidence infrastructure, and clinical tools that make ocular oncology research usable in real care.",
+  "heroDetail": "Our lab is virtual-first, project-driven, and builder-oriented. We combine clinical expertise, health services research, AI methods, and reproducible data infrastructure.",
+  "affiliation": "University of Calgary",
+  "contactEmail": "contact@o3r.ca",
+  "piName": "Trafford Crump, PhD",
+  "piRole": "Principal Investigator",
+  "piSummary": "Health services researcher focused on measurement frameworks, real-world evidence, and practical clinical systems.",
+  "piUrl": "https://traffordcrump.com/",
+  "openScienceUrl": "https://osf.io/",
+  "joinTitle": "Join the Lab",
+  "joinSummary": "We look for students and collaborators who are curious, reliable, and interested in turning research into usable clinical systems.",
+  "joinDetail": "Trainees work on concrete projects: manuscripts, registry QA, outcome measurement, clinical AI validation, evidence synthesis, and implementation tools. The lab is virtual-first and project-driven, with a strong emphasis on clear writing, careful data work, and practical outputs that can be used by clinicians and research teams.",
+  "joinCtaLabel": "Start a conversation",
+  "joinCtaText": "Send a short note describing your interests, your CV, and any relevant research, writing, data, clinical, or software experience.",
+  "meta": {
+    "title": "O3R | Ocular Oncology Outcomes Research",
+    "description": "O3R builds measurement systems for ocular oncology: outcome measures, clinical data infrastructure, and decision-support tools for real-world care."
+  },
+  "siteUrl": "https://o3r.ca"
+}

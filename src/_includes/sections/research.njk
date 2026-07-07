@@ -1,0 +1,27 @@
+<section class="section-band section-band-alt" id="research">
+  <div class="section-heading">
+    <p class="eyebrow">Research focus</p>
+    <h2>What we work on</h2>
+    <p>We organize our work around clinical problems that need better measurement, stronger evidence infrastructure, or tools that fit the workflow of care.</p>
+  </div>
+  <div class="research-grid">
+    {% for item in research %}
+      <article class="research-card">
+        <div class="research-card-head">
+          <span class="icon-badge icon-{{ item.icon }}" aria-hidden="true"></span>
+          <h3>{{ item.title }}</h3>
+        </div>
+        <p>{{ item.summary }}</p>
+        {% set linkedProjects = item.linksTo | findProject(projects) %}
+        {% if linkedProjects.length %}
+          <ul class="inline-links">
+            {% for project in linkedProjects %}
+              <li><a href="#project-{{ project.id }}">{{ project.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+

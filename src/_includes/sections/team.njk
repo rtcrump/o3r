@@ -1,0 +1,54 @@
+{% set featured = team | selectattr("featured") | list %}
+{% set members = team | rejectattr("featured") | list %}
+<section class="section-band section-band-deep" id="team">
+  <div class="section-heading">
+    <p class="eyebrow">Team</p>
+    <h2>Our team</h2>
+    <p>O3R is a virtual-first research group connecting students, clinicians, and collaborators around practical ocular oncology problems.</p>
+  </div>
+
+  {% for person in featured %}
+    <article class="pi-card">
+      <div class="initials-badge">{% initials person.name %}</div>
+      <div class="pi-copy">
+        <p class="role-label">{{ person.role }}</p>
+        <h3>{{ person.name }}</h3>
+        <p>{{ site.piSummary }}</p>
+        <div class="person-links">
+          <a href="{{ site.piUrl }}">Visit PI site</a>
+          {% if person.scholarUrl %}
+            <a href="{{ person.scholarUrl }}">Google Scholar</a>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+
+  <div class="team-grid">
+    {% for member in members %}
+      <article class="team-card">
+        <div class="team-card-top">
+          <div class="initials-badge">{% initials member.name %}</div>
+          <div>
+            <h3>{{ member.name }}</h3>
+            <p class="role-label">{{ member.role }}</p>
+          </div>
+        </div>
+        {% set memberProjects = member.projects | findProject(projects) %}
+        {% if memberProjects.length %}
+          <ul class="member-projects">
+            {% for project in memberProjects %}
+              <li><a href="#project-{{ project.id }}">{{ project.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="team-note">Project assignments can be added here when ready.</p>
+        {% endif %}
+        {% if member.scholarUrl %}
+          <p class="person-links"><a href="{{ member.scholarUrl }}">Google Scholar</a></p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+

@@ -1,0 +1,25 @@
+<section class="section-band" id="publications">
+  <div class="section-heading">
+    <p class="eyebrow">Publications</p>
+    <h2>Selected work and open science</h2>
+    <p>The site keeps publications intentionally compact. Individual Google Scholar profiles belong with team members; lab-level outputs and shared materials can live on an open science page.</p>
+  </div>
+  {% if publications.length %}
+    <div class="publication-list">
+      {% for publication in publications %}
+        <article class="publication-item">
+          <h3>{{ publication.title }}</h3>
+          <p>{{ publication.citation }}</p>
+          {% if publication.link %}
+            <a href="{{ publication.link }}">Read publication</a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-state">Selected publications can be added here over time without changing the site structure.</p>
+  {% endif %}
+  {% if site.openScienceUrl %}
+    <p class="publication-cta"><a href="{{ site.openScienceUrl }}">Visit the lab open science page</a></p>
+  {% endif %}
+</section>

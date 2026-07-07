@@ -1,0 +1,39 @@
+[
+  {
+    "id": "trafford-crump",
+    "name": "Trafford Crump, PhD",
+    "role": "Principal Investigator",
+    "projects": ["nevisight", "prom-um", "core-outcome-set"],
+    "featured": true,
+    "scholarUrl": "https://scholar.google.com/"
+  },
+  {
+    "id": "student-1",
+    "name": "Student Name",
+    "role": "PhD Candidate",
+    "projects": ["prom-um", "core-outcome-set"],
+    "scholarUrl": ""
+  },
+  {
+    "id": "student-2",
+    "name": "Student Name",
+    "role": "MSc Student",
+    "projects": ["aobp-registry"],
+    "scholarUrl": ""
+  },
+  {
+    "id": "student-3",
+    "name": "Student Name",
+    "role": "Research Assistant",
+    "projects": ["nevisight"],
+    "scholarUrl": ""
+  },
+  {
+    "id": "student-4",
+    "name": "Student Name",
+    "role": "Undergraduate Trainee",
+    "projects": ["textbook-outcomes"],
+    "scholarUrl": ""
+  }
+]
+

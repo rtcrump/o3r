@@ -1,0 +1,35 @@
+<section class="section-band" id="projects">
+  <div class="section-heading">
+    <p class="eyebrow">Projects</p>
+    <h2>Active work</h2>
+    <p>Our projects include manuscripts, data infrastructure, and tools moving toward clinical use.</p>
+  </div>
+  <div class="project-list">
+    {% for project in projects %}
+      <article class="project-row" id="project-{{ project.id }}">
+        <div class="project-main">
+          <div class="project-title-line">
+            <h3>{{ project.title }}</h3>
+            <span class="status-pill">{{ project.status }}</span>
+          </div>
+          <p>{{ project.summary }}</p>
+          {% if project.tags and project.tags.length %}
+            <ul class="tag-list" aria-label="Project topics">
+              {% for tag in project.tags %}
+                <li>{{ tag }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        <div class="project-link">
+          {% if project.link %}
+            <a href="{{ project.link }}">View artifact</a>
+          {% else %}
+            <span>No public link yet</span>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+

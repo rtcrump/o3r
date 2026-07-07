@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.meta.title }}</title>
+    <meta name="description" content="{{ description or site.meta.description }}">
+    <link rel="canonical" href="{{ site.siteUrl }}/">
+    <meta property="og:title" content="{{ title or site.meta.title }}">
+    <meta property="og:description" content="{{ description or site.meta.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.siteUrl }}/">
+    <meta name="theme-color" content="#101214">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="{{ site.labName }} home">{{ site.shortName }}</a>
+        <nav class="desktop-nav" aria-label="Primary">
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#join">Join</a>
+        </nav>
+        <details class="mobile-nav">
+          <summary aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </summary>
+          <nav aria-label="Mobile">
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#join">Join</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+    <main id="main">
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-label">Contact</p>
+          <a href="mailto:{{ site.contactEmail }}">{{ site.contactEmail }}</a>
+        </div>
+        <div>
+          <p class="footer-label">Affiliation</p>
+          <p>{{ site.affiliation }}</p>
+        </div>
+        <div>
+          <p class="footer-label">Elsewhere</p>
+          <a href="{{ site.piUrl }}">PI site</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

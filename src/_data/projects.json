@@ -1,0 +1,66 @@
+[
+  {
+    "id": "nevisight",
+    "title": "NeviSight",
+    "summary": "AI-supported risk stratification for choroidal nevus assessment and follow-up, with emphasis on clinically interpretable outputs, external validation, and workflow integration.",
+    "status": "In progress",
+    "link": "",
+    "tags": ["AI", "Screening", "Clinical workflow"]
+  },
+  {
+    "id": "aobp-registry",
+    "title": "AOBP Registry",
+    "summary": "A REDCap registry for the Alberta Ocular Brachytherapy Program, currently undergoing validation to support reliable clinical data capture and future multi-site studies.",
+    "status": "Data QA active",
+    "link": "",
+    "tags": ["Registry", "REDCap", "Data infrastructure"]
+  },
+  {
+    "id": "prom-um",
+    "title": "PROM-UM",
+    "summary": "A patient-reported outcome measure for post-brachytherapy care, focused on capturing patient experience in a way that is clinically and psychometrically meaningful.",
+    "status": "Completed",
+    "link": "",
+    "tags": ["Patient-reported outcomes", "Instrument design"]
+  },
+  {
+    "id": "core-outcome-set",
+    "title": "Core Outcome Set",
+    "summary": "A shared minimum outcome framework for ocular oncology studies, intended to improve consistency in what researchers measure and make findings easier to compare across studies, clinics, and datasets.",
+    "status": "In development",
+    "link": "",
+    "tags": ["Standardization", "Research methods"]
+  },
+  {
+    "id": "standardized-referral",
+    "title": "Standardized Referral",
+    "summary": "A program studying referral pathways for suspected uveal melanoma, including delayed referral rates, referral-letter quality, and patient perceptions of referral delays.",
+    "status": "In progress",
+    "link": "",
+    "tags": ["Referral quality", "Uveal melanoma"]
+  },
+  {
+    "id": "eras-ocular-oncology",
+    "title": "ERAS in Ocular Oncology",
+    "summary": "Development of a formal enhanced recovery protocol for ocular oncologic surgery.",
+    "status": "In progress",
+    "link": "",
+    "tags": ["Surgery", "Implementation", "Delphi"]
+  },
+  {
+    "id": "pre-ras",
+    "title": "Pre-RAS",
+    "summary": "Development of a structured preparation and recovery-planning program for uveal melanoma patients undergoing ocular oncology care.",
+    "status": "In development",
+    "link": "",
+    "tags": ["Prehabilitation", "Surgery", "Recovery"]
+  },
+  {
+    "id": "textbook-outcomes",
+    "title": "Textbook Outcomes",
+    "summary": "Benchmark development for defining high-quality ocular oncology surgical care using outcomes that are clinically meaningful, measurable, and comparable.",
+    "status": "Active analysis",
+    "link": "",
+    "tags": ["Quality", "Benchmarks", "Outcomes"]
+  }
+]

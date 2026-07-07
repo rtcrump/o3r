@@ -1,0 +1,30 @@
+[
+  {
+    "id": "outcomes-measurement",
+    "title": "Outcomes Measurement",
+    "summary": "We develop and evaluate ways to measure what matters in ocular oncology: core outcome frameworks, patient-reported outcomes, referral quality, delays in care, and benchmarks for care.",
+    "linksTo": ["prom-um", "core-outcome-set", "textbook-outcomes", "standardized-referral"],
+    "icon": "measure"
+  },
+  {
+    "id": "clinical-ai",
+    "title": "Clinical Decision Support and AI",
+    "summary": "We build and validate tools that can support earlier, more consistent clinical decisions, including AI-supported approaches to choroidal nevus assessment and follow-up.",
+    "linksTo": ["nevisight"],
+    "icon": "vision"
+  },
+  {
+    "id": "perioperative-systems",
+    "title": "Perioperative Systems",
+    "summary": "We translate perioperative evidence into practical protocols for ocular oncology surgery, including enhanced recovery and prehabilitation work designed for clinical implementation.",
+    "linksTo": ["eras-ocular-oncology", "pre-ras"],
+    "icon": "pathway"
+  },
+  {
+    "id": "data-infrastructure",
+    "title": "Data Infrastructure",
+    "summary": "We create the data linkages, registry, and QA infrastructure needed for trustworthy multi-project research and future multi-site collaboration.",
+    "linksTo": ["aobp-registry"],
+    "icon": "nodes"
+  }
+]
