@@ -14,9 +14,9 @@
           </div>
           <p>{{ project.summary }}</p>
           {% if project.tags and project.tags.length %}
-            <ul class="tag-list" aria-label="Project topics">
+            <ul class="chip-list tag-list" aria-label="Project topics">
               {% for tag in project.tags %}
-                <li>{{ tag }}</li>
+                <li class="keyword-chip">{{ tag }}</li>
               {% endfor %}
             </ul>
           {% endif %}

@@ -14,9 +14,9 @@
         <p>{{ item.summary }}</p>
         {% set linkedProjects = item.linksTo | findProject(projects) %}
         {% if linkedProjects.length %}
-          <ul class="inline-links">
+          <ul class="chip-list project-chip-list" aria-label="Related projects">
             {% for project in linkedProjects %}
-              <li><a href="#project-{{ project.id }}">{{ project.title }}</a></li>
+              <li><a class="project-chip" href="#project-{{ project.id }}">{{ project.title }}</a></li>
             {% endfor %}
           </ul>
         {% endif %}

@@ -488,9 +488,7 @@ h3 {
   box-shadow: 0 -0.8rem 0 var(--ink), 0.72rem 0.42rem 0 var(--ink), -0.72rem 0.42rem 0 var(--ink);
 }
 
-.inline-links,
-.tag-list,
-.member-projects {
+.chip-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
@@ -499,16 +497,9 @@ h3 {
   margin: 1rem 0 0;
 }
 
-.inline-links {
+.project-chip-list {
   margin-top: auto;
 }
-
-.inline-links a,
-.member-projects a {
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-}
-
 .project-list,
 .publication-list {
   display: grid;
@@ -533,18 +524,22 @@ h3 {
 }
 
 .status-pill,
-.tag-list li,
+.keyword-chip,
+.project-chip,
 .role-label {
   display: inline-flex;
   align-items: center;
   width: fit-content;
+  min-height: 1.82rem;
+  padding: 0.24rem 0.56rem;
   border-radius: 4px;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .status-pill {
-  padding: 0.16rem 0.45rem;
   color: var(--ink);
   background: var(--gold);
 }
@@ -564,10 +559,56 @@ h3 {
   background: #f8b8b1;
 }
 
-.tag-list li {
-  padding: 0.18rem 0.48rem;
+.keyword-chip {
   color: var(--muted);
   border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.project-chip {
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid #bdc7c4;
+  text-decoration: none;
+}
+
+.project-chip:hover {
+  color: var(--ink);
+  border-color: var(--teal);
+  background: #e7f4f2;
+}
+
+.section-band-deep .project-chip {
+  color: var(--paper);
+  background: #20262a;
+  border-color: #3d4548;
+}
+
+.section-band-deep .project-chip:hover {
+  color: var(--paper);
+  border-color: #8fd6dd;
+  background: #263438;
+}
+
+.member-projects {
+  margin-top: 0;
+}
+
+.metadata-group {
+  margin-top: 1rem;
+}
+
+.meta-label {
+  margin: 0 0 0.42rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-band-deep .meta-label {
+  color: #b9c0bf;
 }
 
 .project-link {
@@ -588,7 +629,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin: 1rem 0 0;
+  margin: 0;
 }
 
 .initials-badge {
