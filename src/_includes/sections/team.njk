@@ -7,22 +7,23 @@
     <p>O3R is a virtual-first research group connecting students, clinicians, and collaborators around practical ocular oncology problems.</p>
   </div>
 
-  {% for person in featured %}
-    <article class="pi-card">
-      <div class="initials-badge">{% initials person.name %}</div>
-      <div class="pi-copy">
-        <p class="role-label">{{ person.role }}</p>
-        <h3>{{ person.name }}</h3>
-        <p>{{ site.piSummary }}</p>
-        <div class="person-links">
-          <a href="{{ site.piUrl }}">Visit PI site</a>
+  <div class="pi-grid">
+    {% for person in featured %}
+      <article class="pi-card">
+        <div class="initials-badge">{% initials person.name %}</div>
+        <div class="pi-copy">
+          <p class="role-label">{{ person.role }}</p>
+          <h3>{{ person.name }}</h3>
+          <p>{{ person.summary or site.piSummary }}</p>
           {% if person.scholarUrl %}
-            <a href="{{ person.scholarUrl }}">Google Scholar</a>
+            <div class="person-links">
+              <a href="{{ person.scholarUrl }}">Google Scholar</a>
+            </div>
           {% endif %}
         </div>
-      </div>
-    </article>
-  {% endfor %}
+      </article>
+    {% endfor %}
+  </div>
 
   <div class="team-grid">
     {% for member in members %}
@@ -51,4 +52,3 @@
     {% endfor %}
   </div>
 </section>
-
