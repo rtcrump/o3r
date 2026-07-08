@@ -18,7 +18,7 @@
   "joinCtaText": "Send a short note describing your interests, your CV, and any relevant research, writing, data, clinical, or software experience.",
   "meta": {
     "title": "O3R | Ocular Oncology Outcomes Research",
-    "description": "O3R builds measurement systems for ocular oncology: outcome measures, clinical data infrastructure, and decision-support tools for real-world care."
+    "description": "O3R is an ocular oncology outcomes research lab at the University of Calgary and University of Alberta, building outcome measures, clinical AI tools, REDCap registry infrastructure, and perioperative evidence systems for real-world eye cancer care."
   },
   "siteUrl": "https://rtcrump.github.io/o3r"
 }

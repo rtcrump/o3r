@@ -2,7 +2,7 @@
   {
     "id": "nevisight",
     "title": "NeviSight",
-    "summary": "AI-supported risk stratification for choroidal nevus assessment and follow-up, with emphasis on clinically interpretable outputs, external validation, and workflow integration.",
+    "summary": "AI-supported risk stratification for choroidal nevus assessment and follow-up, with emphasis on interpretable outputs, external validation, and integration into ocular oncology screening workflows.",
     "status": "In progress",
     "link": "",
     "tags": ["AI", "Screening", "Clinical workflow"]
@@ -10,15 +10,15 @@
   {
     "id": "aobp-registry",
     "title": "AOBP Registry",
-    "summary": "A REDCap registry for the Alberta Ocular Brachytherapy Program, currently undergoing validation to support reliable clinical data capture and future multi-site studies.",
-    "status": "Data QA active",
+    "summary": "A REDCap registry for the Alberta Ocular Brachytherapy Program, currently undergoing validation to support reliable clinical data capture, outcomes research, and future multi-site ocular oncology studies.",
+    "status": "In progress",
     "link": "",
     "tags": ["Registry", "REDCap", "Data infrastructure"]
   },
   {
     "id": "prom-um",
     "title": "PROM-UM",
-    "summary": "A patient-reported outcome measure for post-brachytherapy care, focused on capturing patient experience in a way that is clinically and psychometrically meaningful.",
+    "summary": "A patient-reported outcome measure for post-brachytherapy uveal melanoma care, focused on capturing patient experience in a clinically and psychometrically meaningful way.",
     "status": "Completed",
     "link": "",
     "tags": ["Patient-reported outcomes", "Instrument design"]
@@ -42,7 +42,7 @@
   {
     "id": "eras-ocular-oncology",
     "title": "ERAS in Ocular Oncology",
-    "summary": "Development of a formal enhanced recovery protocol for ocular oncologic surgery.",
+    "summary": "Development of a formal enhanced recovery protocol for ocular oncologic surgery, with attention to perioperative evidence, implementation, and clinical consensus.",
     "status": "In progress",
     "link": "",
     "tags": ["Surgery", "Implementation", "Delphi"]
@@ -59,7 +59,7 @@
     "id": "textbook-outcomes",
     "title": "Textbook Outcomes",
     "summary": "Benchmark development for defining high-quality ocular oncology surgical care using outcomes that are clinically meaningful, measurable, and comparable.",
-    "status": "Active analysis",
+    "status": "In development",
     "link": "",
     "tags": ["Quality", "Benchmarks", "Outcomes"]
   }

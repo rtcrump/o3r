@@ -10,7 +10,7 @@
         <div class="project-main">
           <div class="project-title-line">
             <h3>{{ project.title }}</h3>
-            <span class="status-pill">{{ project.status }}</span>
+            <span class="status-pill status-{{ project.status | statusClass }}">{{ project.status }}</span>
           </div>
           <p>{{ project.summary }}</p>
           {% if project.tags and project.tags.length %}
@@ -32,4 +32,3 @@
     {% endfor %}
   </div>
 </section>
-

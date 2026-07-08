@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or site.meta.title }}</title>
     <meta name="description" content="{{ description or site.meta.description }}">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="{{ site.labName }}">
     <link rel="canonical" href="{{ site.siteUrl }}/">
     <meta property="og:title" content="{{ title or site.meta.title }}">
     <meta property="og:description" content="{{ description or site.meta.description }}">
@@ -15,6 +17,74 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/o3r/assets/style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ResearchOrganization",
+            "@id": "{{ site.siteUrl }}/#organization",
+            "name": "{{ site.labName }}",
+            "alternateName": "{{ site.shortName }}",
+            "url": "{{ site.siteUrl }}/",
+            "description": "{{ site.meta.description }}",
+            "parentOrganization": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Calgary"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Alberta"
+              }
+            ],
+            "knowsAbout": [
+              "ocular oncology",
+              "uveal melanoma",
+              "patient-reported outcome measures",
+              "clinical AI",
+              "REDCap registry infrastructure",
+              "perioperative care",
+              "health services research"
+            ],
+            "member": [
+              {% for person in team %}
+              {
+                "@type": "Person",
+                "name": "{{ person.name }}",
+                "jobTitle": "{{ person.role }}"{% if person.summary %},
+                "description": "{{ person.summary }}"{% endif %}{% if person.scholarUrl or person.orcidUrl %},
+                "sameAs": [
+                  {% if person.scholarUrl %}"{{ person.scholarUrl | safe }}"{% endif %}{% if person.scholarUrl and person.orcidUrl %},{% endif %}
+                  {% if person.orcidUrl %}"{{ person.orcidUrl | safe }}"{% endif %}
+                ]{% endif %}
+              }{% if not loop.last %},{% endif %}
+              {% endfor %}
+            ],
+            "subjectOf": [
+              {% for project in projects %}
+              {
+                "@type": "ResearchProject",
+                "name": "{{ project.title }}",
+                "description": "{{ project.summary }}",
+                "keywords": "{{ project.tags | join(', ') }}"
+              }{% if not loop.last %},{% endif %}
+              {% endfor %}
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "{{ site.siteUrl }}/#website",
+            "name": "{{ site.meta.title }}",
+            "url": "{{ site.siteUrl }}/",
+            "publisher": {
+              "@id": "{{ site.siteUrl }}/#organization"
+            },
+            "inLanguage": "en-CA"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

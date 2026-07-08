@@ -11,6 +11,12 @@ module.exports = function (eleventyConfig) {
       .filter(Boolean);
   });
 
+  eleventyConfig.addFilter("statusClass", function (status) {
+    return String(status || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  });
   eleventyConfig.addShortcode("initials", function (name) {
     if (!name) {
       return "?";
@@ -35,4 +41,3 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk"
   };
 };
-

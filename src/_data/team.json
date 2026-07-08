@@ -18,6 +18,14 @@
     "scholarUrl": ""
   },
   {
+    "id": "manjot-jhinjar",
+    "name": "Manjot Jhinjar",
+    "role": "Undergraduate Student",
+    "projects": ["aobp-registry"],
+    "orcidUrl": "https://orcid.org/0009-0000-9866-4101",
+    "scholarUrl": ""
+  },
+  {
     "id": "emily-laycock",
     "name": "Emily Laycock",
     "role": "Graduate Student",
