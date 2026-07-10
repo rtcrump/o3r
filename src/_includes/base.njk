@@ -7,11 +7,11 @@
     <meta name="description" content="{{ description or site.meta.description }}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="{{ site.labName }}">
-    <link rel="canonical" href="{{ site.siteUrl }}/">
+    <link rel="canonical" href="{{ site.siteUrl }}{{ page.url }}">
     <meta property="og:title" content="{{ title or site.meta.title }}">
     <meta property="og:description" content="{{ description or site.meta.description }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.siteUrl }}/">
+    <meta property="og:url" content="{{ site.siteUrl }}{{ page.url }}">
     <meta name="theme-color" content="#101214">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,12 +90,13 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="top">
       <div class="nav-shell">
-        <a class="brand" href="#top" aria-label="{{ site.labName }} home">{{ site.shortName }}</a>
+        <a class="brand" href="/o3r/" aria-label="{{ site.labName }} home">{{ site.shortName }}</a>
         <nav class="desktop-nav" aria-label="Primary">
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#team">Team</a>
-          <a href="#join">Join</a>
+          <a href="/o3r/#research">Research</a>
+          <a href="/o3r/#projects">Projects</a>
+          <a href="/o3r/prom-um/">PROM-UM</a>
+          <a href="/o3r/#team">Team</a>
+          <a href="/o3r/#join">Join</a>
         </nav>
         <details class="mobile-nav">
           <summary aria-label="Open navigation menu">
@@ -104,10 +105,11 @@
             <span></span>
           </summary>
           <nav aria-label="Mobile">
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#team">Team</a>
-            <a href="#join">Join</a>
+            <a href="/o3r/#research">Research</a>
+            <a href="/o3r/#projects">Projects</a>
+            <a href="/o3r/prom-um/">PROM-UM</a>
+            <a href="/o3r/#team">Team</a>
+            <a href="/o3r/#join">Join</a>
           </nav>
         </details>
       </div>
