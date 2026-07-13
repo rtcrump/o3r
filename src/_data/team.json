@@ -30,6 +30,12 @@
     "name": "Emily Laycock",
     "role": "Graduate Student",
     "projects": ["standardized-referral"],
+    "projectLinks": [
+      {
+        "label": "patient committee",
+        "url": "/o3r/uveal-melanoma-patient-advisory-committee/"
+      }
+    ],
     "scholarUrl": ""
   },
   {

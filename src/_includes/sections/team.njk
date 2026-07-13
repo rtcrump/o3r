@@ -40,12 +40,15 @@
           </div>
         </div>
         {% set memberProjects = member.projects | findProject(projects) %}
-        {% if memberProjects.length %}
+        {% if memberProjects.length or member.projectLinks %}
           <div class="metadata-group">
             <p class="meta-label">Projects</p>
             <ul class="chip-list member-projects">
               {% for project in memberProjects %}
                 <li><a class="project-chip" href="#project-{{ project.id }}">{{ project.title }}</a></li>
+              {% endfor %}
+              {% for projectLink in member.projectLinks %}
+                <li><a class="project-chip" href="{{ projectLink.url }}">{{ projectLink.label }}</a></li>
               {% endfor %}
             </ul>
           </div>
