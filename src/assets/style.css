@@ -709,6 +709,21 @@ h3 {
   background: linear-gradient(90deg, var(--teal), var(--green), var(--gold), var(--coral));
 }
 
+.advisory-hero {
+  background:
+    linear-gradient(90deg, rgba(251, 250, 247, 0.98) 0%, rgba(251, 250, 247, 0.92) 50%, rgba(232, 243, 246, 0.9) 100%);
+}
+
+.advisory-hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(58rem, 72vw);
+  height: 9px;
+  background: linear-gradient(90deg, var(--blue), var(--teal), var(--green), var(--gold));
+}
+
 .instrument-hero-grid,
 .registration-grid {
   display: grid;
@@ -870,6 +885,43 @@ h3 {
   color: #b9c0bf;
 }
 
+.participation-flow {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.participation-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.participation-step p:last-child,
+.advisory-note p:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  margin: 0;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.advisory-note {
+  max-width: 48rem;
+  padding: 1.25rem;
+  border-left: 5px solid var(--teal);
+  background: var(--surface);
+}
+.section-band-deep .advisory-note {
+  background: #181c1f;
+}
 .site-footer {
   background: var(--ink);
   color: var(--paper);
@@ -994,6 +1046,17 @@ h3 {
   .registration-grid {
     grid-template-columns: minmax(0, 0.62fr) minmax(17rem, 0.38fr);
     align-items: start;
+  }
+
+  .participation-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .participation-step {
+    grid-template-columns: 1fr;
+    align-content: start;
+    min-height: 14rem;
+    padding: 1.25rem;
   }
 
   .footer-grid {
