@@ -9,8 +9,8 @@
   {
     "id": "clinical-ai",
     "title": "Clinical Decision Support and AI",
-    "summary": "We build and validate tools that can support earlier, more consistent clinical decisions, including AI-supported approaches to choroidal nevus assessment and follow-up.",
-    "linksTo": ["nevisight"],
+    "summary": "We develop and validate machine-learning methods for choroidal nevus detection and segmentation in routine fundus images, using multi-site clinical data.",
+    "linksTo": ["choroidal-nevus-ml"],
     "icon": "vision"
   },
   {

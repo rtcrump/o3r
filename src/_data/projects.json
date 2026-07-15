@@ -1,11 +1,25 @@
 [
   {
-    "id": "nevisight",
-    "title": "NeviSight",
-    "summary": "AI-supported risk stratification for choroidal nevus assessment and follow-up, with emphasis on interpretable outputs, external validation, and integration into ocular oncology screening workflows.",
-    "status": "In progress",
-    "link": "",
-    "tags": ["AI", "Screening", "Clinical workflow"]
+    "id": "choroidal-nevus-ml",
+    "title": "Machine learning for choroidal nevus detection",
+    "summary": "Deep-learning models that identify and segment choroidal nevi in routine fundus images, developed and validated on multi-site data.",
+    "status": "Published research",
+    "link": "https://doi.org/10.1016/j.jcjo.2024.07.009",
+    "tags": ["Machine learning", "Fundus imaging", "Multi-site validation"],
+    "publications": [
+      {
+        "label": "Classification and segmentation overview (CJO, 2025)",
+        "url": "https://doi.org/10.1016/j.jcjo.2024.07.009"
+      },
+      {
+        "label": "Patch-based classification study (IEEE, 2023)",
+        "url": "https://doi.org/10.1109/IEEECONF58974.2023.10404605"
+      },
+      {
+        "label": "CNN-based segmentation study (IEEE EMBC, 2024)",
+        "url": "https://doi.org/10.1109/EMBC53108.2024.10781889"
+      }
+    ]
   },
   {
     "id": "aobp-registry",

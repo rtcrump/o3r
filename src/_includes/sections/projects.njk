@@ -2,7 +2,7 @@
   <div class="section-heading">
     <p class="eyebrow">Projects</p>
     <h2>Active work</h2>
-    <p>Our projects include manuscripts, data infrastructure, and tools moving toward clinical use.</p>
+    <p>Our projects include manuscripts, data infrastructure, and applied research grounded in clinical care.</p>
   </div>
   <div class="project-list">
     {% for project in projects %}
@@ -19,6 +19,16 @@
                 <li class="keyword-chip">{{ tag }}</li>
               {% endfor %}
             </ul>
+          {% endif %}
+          {% if project.publications and project.publications.length %}
+            <div class="metadata-group">
+              <p class="meta-label">Related publications</p>
+              <ul class="publication-links">
+                {% for publication in project.publications %}
+                  <li><a href="{{ publication.url }}">{{ publication.label }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endif %}
         </div>
         <div class="project-link">

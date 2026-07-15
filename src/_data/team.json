@@ -4,7 +4,7 @@
     "name": "Trafford Crump, PhD",
     "role": "Principal Investigator",
     "summary": "Trafford Crump is a health services researcher focused on measurement frameworks, real-world evidence, and practical clinical systems. His work bridges psychometrics, outcomes research, data infrastructure, and deployable tools for specialist care.",
-    "projects": ["nevisight", "prom-um", "core-outcome-set"],
+    "projects": ["choroidal-nevus-ml", "prom-um", "core-outcome-set"],
     "featured": true,
     "scholarUrl": "https://scholar.google.com/citations?user=TkOnBssAAAAJ&hl=en"
   },
@@ -13,7 +13,7 @@
     "name": "Ezekiel Weis, MD, MPH",
     "role": "Principal Investigator",
     "summary": "Ezekiel Weis is an ocular oncologist and Provincial Lead of the Alberta Ocular Biopathology Program. His research focuses on the diagnosis, surveillance, and management of intraocular tumors.",
-    "projects": ["nevisight", "aobp-registry", "standardized-referral"],
+    "projects": ["choroidal-nevus-ml", "aobp-registry", "standardized-referral"],
     "featured": true,
     "scholarUrl": ""
   },
