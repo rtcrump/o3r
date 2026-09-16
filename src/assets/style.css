@@ -916,6 +916,40 @@ h3 {
   color: #b9c0bf;
 }
 
+
+
+.validation-grid,
+.citation-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.validation-metric,
+.citation-item {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.validation-metric h3 {
+  font-size: 1.3rem;
+}
+
+.citation-item p {
+  margin-bottom: 0;
+}
+.faq-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.faq-item {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
 .participation-flow {
   display: grid;
   gap: 0.9rem;
@@ -1094,6 +1128,14 @@ h3 {
     align-items: start;
   }
 
+  .faq-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .validation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .participation-flow {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1103,6 +1145,10 @@ h3 {
     align-content: start;
     min-height: 14rem;
     padding: 1.25rem;
+  }
+
+  .citation-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .footer-grid {
@@ -1133,4 +1179,3 @@ h3 {
     max-width: 62rem;
   }
 }
-
