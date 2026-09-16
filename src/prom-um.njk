@@ -1,15 +1,102 @@
 ---
 layout: base.njk
 title: "PROM-UM | Patient-Reported Outcome Measure for Uveal Melanoma"
-description: "Register to use PROM-UM, a patient-reported outcome measure for post-brachytherapy uveal melanoma care, and review licensing options for academic, clinical, and commercial use."
+description: "PROM-UM is a validated patient-reported outcome measure for uveal melanoma after brachytherapy, with licensing, USD fees, registration, evidence, and citation details."
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "@id": "{{ site.siteUrl }}/prom-um/#webpage",
+  "url": "{{ site.siteUrl }}/prom-um/",
+  "name": "PROM-UM Patient-Reported Outcome Measure for Uveal Melanoma",
+  "description": "PROM-UM is a validated patient-reported outcome measure for adults treated with brachytherapy for uveal melanoma, with information about evidence, licensing, USD fees, and registration.",
+  "inLanguage": "en-CA",
+  "publisher": {
+    "@type": "ResearchOrganization",
+    "name": "{{ site.labName }}",
+    "url": "{{ site.siteUrl }}/"
+  },
+  "about": [
+    { "@type": "MedicalCondition", "name": "Uveal melanoma" },
+    { "@type": "MedicalTherapy", "name": "Plaque brachytherapy" },
+    { "@type": "Thing", "name": "Patient-reported outcome measure" },
+    { "@type": "Thing", "name": "Ocular oncology quality of life" }
+  ],
+  "keywords": [
+    "PROM-UM",
+    "patient-reported outcome measure for uveal melanoma",
+    "uveal melanoma PROM",
+    "ocular oncology PROM",
+    "uveal melanoma quality of life questionnaire",
+    "brachytherapy patient-reported outcomes",
+    "PROM-UM license",
+    "PROM-UM registration",
+    "Symptom Impairment Worry Discomfort"
+  ],
+  "citation": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "The use of semistructured interviews to assess quality of life impacts for patients with uveal melanoma",
+      "author": ["Brianna C. Kopp", "R. Trafford Crump", "Ezekiel Weis"],
+      "datePublished": "2017",
+      "isPartOf": { "@type": "Periodical", "name": "Canadian Journal of Ophthalmology" },
+      "identifier": "https://doi.org/10.1016/j.jcjo.2016.10.005",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0008418215300806"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Psychometric Results of a New Patient-Reported Outcome Measure for Uveal Melanoma Post-Brachytherapy Treatment: The PROM-UM",
+      "author": ["Ezekiel Weis", "Jing Jiang", "Alison H. Skalet", "Carol L. Shields", "R. Trafford Crump"],
+      "datePublished": "2023-08-17",
+      "isPartOf": { "@type": "Periodical", "name": "Cancers" },
+      "identifier": "https://doi.org/10.3390/cancers15164142",
+      "url": "https://www.mdpi.com/2072-6694/15/16/4142"
+    }
+  ],
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is PROM-UM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PROM-UM is a patient-reported outcome measure for adults treated with brachytherapy for uveal melanoma. It measures post-treatment symptom impairment, worry, and discomfort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What evidence supports PROM-UM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PROM-UM is supported by a 2017 qualitative study of quality-of-life impacts in uveal melanoma and a 2023 psychometric validation study of 439 patients from three North American ocular oncology centres."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I register to use PROM-UM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Users should send a PROM-UM registration request to Ocular Oncology Outcomes Research with their institution, intended use, study or clinic name, expected participants or users, and whether translation or electronic implementation is planned."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does PROM-UM cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Academic and non-profit use has no fee. Clinical use is listed at $500/year USD per group of 20 users. Commercial or clinical trial use is listed at $35-$70 USD per completed use. Final fees are confirmed during registration."
+      }
+    }
+  ]
+}
+</script>
 <section class="section-panel instrument-hero" id="prom-um">
   <div class="instrument-hero-grid">
     <div class="hero-copy">
       <p class="eyebrow"><span>Instrument</span> PROM-UM</p>
       <h1>Patient-Reported Outcome Measure for Uveal Melanoma</h1>
-      <p class="hero-tagline">A purpose-built outcome measure for post-brachytherapy uveal melanoma care.</p>
-      <p class="hero-summary">PROM-UM captures patient experience after ocular brachytherapy in a format designed for research, quality improvement, and clinical implementation. Its development and validation are supported by peer-reviewed ocular oncology publications.</p>
+      <p class="hero-tagline">A validated uveal melanoma questionnaire for post-brachytherapy symptoms, worry, and discomfort.</p>
+      <p class="hero-summary">PROM-UM is a patient-reported outcome measure for adults treated with plaque brachytherapy for uveal melanoma. It was built from patient interviews about ocular oncology quality of life and validated in 439 patients from three North American ocular oncology centres.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#register">Register to use PROM-UM</a>
         <a class="button button-secondary" href="#licensing">View license options</a>
@@ -20,15 +107,15 @@ description: "Register to use PROM-UM, a patient-reported outcome measure for po
       <dl>
         <div>
           <dt>Population</dt>
-          <dd>Adults treated for uveal melanoma</dd>
+          <dd>Adults treated with brachytherapy for uveal melanoma</dd>
         </div>
         <div>
-          <dt>Use cases</dt>
-          <dd>Research, clinical monitoring, quality improvement</dd>
+          <dt>Domains</dt>
+          <dd>Symptom Impairment, Worry, Discomfort</dd>
         </div>
         <div>
-          <dt>Status</dt>
-          <dd>Completed instrument</dd>
+          <dt>Validation sample</dt>
+          <dd>439 patients from 3 ocular oncology centres</dd>
         </div>
       </dl>
     </aside>
@@ -39,20 +126,45 @@ description: "Register to use PROM-UM, a patient-reported outcome measure for po
   <div class="section-heading">
     <p class="eyebrow">About</p>
     <h2>Learn about PROM-UM</h2>
-    <p>PROM-UM was developed to make patient-reported outcomes more specific to ocular oncology care, especially the symptoms, function, and lived experience that matter after treatment.</p>
+    <p>PROM-UM was developed because existing ophthalmic oncology quality-of-life tools did not fully capture what uveal melanoma patients described as important after treatment.</p>
   </div>
   <div class="instrument-grid">
     <article class="instrument-card instrument-card-red">
-      <h3>Focused on ocular oncology</h3>
-      <p>General quality-of-life measures can miss treatment-specific concerns. PROM-UM is tailored to uveal melanoma care after brachytherapy.</p>
+      <h3>Grounded in patient interviews</h3>
+      <p>The development work identified gaps around mental health, family impact, travel and financial burden, and effects on work and home life.</p>
     </article>
     <article class="instrument-card instrument-card-orange">
-      <h3>Built for implementation</h3>
-      <p>The instrument is intended for use in studies, registries, and care pathways where structured patient input can inform outcomes work.</p>
+      <h3>Validated for post-brachytherapy care</h3>
+      <p>The psychometric study used classical test theory and item response theory to evaluate PROM-UM in patients treated with brachytherapy for uveal melanoma.</p>
     </article>
     <article class="instrument-card instrument-card-green">
-      <h3>Registration-supported use</h3>
-      <p>Registration helps us understand how PROM-UM is being used, support appropriate implementation, and maintain version control.</p>
+      <h3>Built for implementation</h3>
+      <p>PROM-UM is intended for research, registries, clinical monitoring, quality improvement, and structured follow-up after ocular brachytherapy.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section-band section-band-alt" id="validation">
+  <div class="section-heading">
+    <p class="eyebrow">Validation</p>
+    <h2>What PROM-UM measures</h2>
+    <p>The 2023 validation study identified three PROM-UM domains and reported acceptable performance across most aspects of the instrument.</p>
+  </div>
+  <div class="validation-grid">
+    <article class="validation-metric">
+      <p class="summary-label">Domain 1</p>
+      <h3>Symptom Impairment</h3>
+      <p>Captures problems such as vision-related impairment, mental health concerns, and difficulty with regular activities.</p>
+    </article>
+    <article class="validation-metric">
+      <p class="summary-label">Domain 2</p>
+      <h3>Worry</h3>
+      <p>Captures concerns about recurrence, metastasis, and the ongoing uncertainty that can follow uveal melanoma treatment.</p>
+    </article>
+    <article class="validation-metric">
+      <p class="summary-label">Domain 3</p>
+      <h3>Discomfort</h3>
+      <p>Captures post-treatment ocular discomfort, including pain, pressure, and irritation around the eye or socket.</p>
     </article>
   </div>
 </section>
@@ -60,24 +172,41 @@ description: "Register to use PROM-UM, a patient-reported outcome measure for po
 <section class="section-band" id="evidence">
   <div class="section-heading">
     <p class="eyebrow">Evidence</p>
-    <h2>Development and validation</h2>
-    <p>PROM-UM is supported by peer-reviewed work describing its development and psychometric validation for patients treated for uveal melanoma.</p>
+    <h2>Development and validation papers</h2>
+    <p>PROM-UM is supported by peer-reviewed development and psychometric validation work in uveal melanoma and ocular oncology patient-reported outcomes.</p>
   </div>
   <div class="evidence-list">
     <article class="evidence-item">
       <p class="summary-label">Development paper</p>
-      <h3>Development of the PROM-UM instrument</h3>
-      <p>Foundational publication supporting PROM-UM development for patient-reported outcomes in uveal melanoma care.</p>
-      <a href="https://www.sciencedirect.com/science/article/pii/S0008418215300806?casa_token=suBB9VcU2nsAAAAA:Z7aF42Fs18PydPHGTBv-o4OoBeMuqnN9ilG0-HhrQ9zILy9mgNG0eIyzByUWzg00X7E_4ah3tuUy">View article</a>
+      <h3>The use of semistructured interviews to assess quality of life impacts for patients with uveal melanoma</h3>
+      <p>Kopp, Crump, and Weis conducted a qualitative study of 10 patients treated with brachytherapy through the Alberta Ocular Brachytherapy Program. The study identified quality-of-life constructs missing from the EORTC QLQ-OPT30 and supported the need for a uveal melanoma-specific patient-reported outcome measure for point-of-care use.</p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S0008418215300806">View article</a>
     </article>
     <article class="evidence-item">
       <p class="summary-label">Validation paper</p>
       <h3>Psychometric Results of a New Patient-Reported Outcome Measure for Uveal Melanoma Post-Brachytherapy Treatment: The PROM-UM</h3>
-      <p>Validation study published in <em>Cancers</em> reporting PROM-UM psychometric results after plaque radiation treatment.</p>
+      <p>Weis, Jiang, Skalet, Shields, and Crump evaluated PROM-UM in 439 patients from the University of Alberta, Wills Eye Hospital, and Casey Eye Institute. The study identified Symptom Impairment, Worry, and Discomfort domains and reported acceptable reliability and item performance, while noting areas for future research.</p>
       <a href="https://www.mdpi.com/2072-6694/15/16/4142">View article</a>
     </article>
   </div>
 </section>
+
+<section class="section-band section-band-accent" id="cite-prom-um">
+  <div class="section-heading">
+    <p class="eyebrow">Cite</p>
+    <h2>How to cite PROM-UM</h2>
+    <p>Please cite both the qualitative development paper and the psychometric validation paper when using PROM-UM in research, clinical studies, registries, or implementation work.</p>
+  </div>
+  <div class="citation-list">
+    <article class="citation-item">
+      <p>Kopp BC, Crump RT, Weis E. The use of semistructured interviews to assess quality of life impacts for patients with uveal melanoma. <em>Canadian Journal of Ophthalmology</em>. 2017. doi:10.1016/j.jcjo.2016.10.005</p>
+    </article>
+    <article class="citation-item">
+      <p>Weis E, Jiang J, Skalet AH, Shields CL, Crump RT. Psychometric Results of a New Patient-Reported Outcome Measure for Uveal Melanoma Post-Brachytherapy Treatment: The PROM-UM. <em>Cancers</em>. 2023;15:4142. doi:10.3390/cancers15164142</p>
+    </article>
+  </div>
+</section>
+
 <section class="section-band section-band-alt" id="licensing">
   <div class="section-heading">
     <p class="eyebrow">Licensing</p>
@@ -148,6 +277,32 @@ description: "Register to use PROM-UM, a patient-reported outcome measure for po
   </div>
 </section>
 
+<section class="section-band section-band-accent" id="prom-um-faq">
+  <div class="section-heading">
+    <p class="eyebrow">FAQ</p>
+    <h2>Common questions</h2>
+    <p>Short answers for researchers, clinicians, trial teams, and digital health groups evaluating whether PROM-UM is the right uveal melanoma patient-reported outcome measure for their work.</p>
+  </div>
+  <div class="faq-list">
+    <article class="faq-item">
+      <h3>What is PROM-UM?</h3>
+      <p>PROM-UM is a validated patient-reported outcome measure for adults treated with brachytherapy for uveal melanoma. It measures symptoms and their impact, worry, and ocular discomfort after treatment.</p>
+    </article>
+    <article class="faq-item">
+      <h3>What makes PROM-UM different from broader quality-of-life tools?</h3>
+      <p>PROM-UM is specific to uveal melanoma after ocular brachytherapy. Its development was informed by patient interviews that identified issues such as mental health, family impact, travel and financial burden, and work and home life.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Who can use PROM-UM?</h3>
+      <p>Academic researchers, non-profit teams, clinical programs, registries, industry-sponsored studies, and digital health platforms may request permission to use PROM-UM under the appropriate license.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Is PROM-UM available for electronic implementation?</h3>
+      <p>Electronic implementation can be reviewed during registration. Requests should describe the platform, intended workflow, number of users or participants, and whether the instrument will be translated or adapted.</p>
+    </article>
+  </div>
+</section>
+
 <section class="section-band section-band-deep" id="register">
   <div class="section-heading">
     <p class="eyebrow">Register</p>
@@ -173,5 +328,3 @@ description: "Register to use PROM-UM, a patient-reported outcome measure for po
     </div>
   </div>
 </section>
-
-
