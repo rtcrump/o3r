@@ -48,6 +48,22 @@
     "tags": ["Surgery", "Implementation", "Delphi"]
   },
   {
+    "id": "octa-nevi-freckles",
+    "title": "OCTa in Differentiating Ocular Nevi From Freckles",
+    "summary": "A study using optical coherence tomography angiography to distinguish ocular nevi from freckles.",
+    "status": "In progress",
+    "link": "",
+    "tags": ["Imaging", "OCT angiography", "Diagnosis"]
+  },
+  {
+    "id": "explainable-ai-ophthalmology",
+    "title": "Explainable AI in Ophthalmology",
+    "summary": "Work on explainable AI methods that make model decisions more interpretable in ophthalmology applications.",
+    "status": "In progress",
+    "link": "",
+    "tags": ["Explainable AI", "Ophthalmology", "Machine learning"]
+  },
+  {
     "id": "pre-ras",
     "title": "Pre-RAS",
     "summary": "Development of a structured preparation and recovery-planning program for uveal melanoma patients undergoing ocular oncology care.",

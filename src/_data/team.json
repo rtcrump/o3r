@@ -36,13 +36,14 @@
         "url": "/uveal-melanoma-patient-advisory-committee/"
       }
     ],
+    "researchGateUrl": "https://www.researchgate.net/profile/Emily-Laycock",
     "scholarUrl": ""
   },
   {
     "id": "michelle-pham",
     "name": "Michelle Pham",
-    "role": "Medical Student",
-    "projects": ["eras-ocular-oncology"],
+    "role": "Medical Student - Class of 2027",
+    "projects": ["eras-ocular-oncology", "octa-nevi-freckles"],
     "scholarUrl": ""
   },
   {
@@ -50,6 +51,14 @@
     "name": "Emmet Soibelman",
     "role": "Undergraduate Student",
     "projects": ["pre-ras"],
+    "scholarUrl": ""
+  },
+  {
+    "id": "intizara-imran",
+    "name": "Intizara Imran",
+    "role": "Undergraduate Student",
+    "projects": ["explainable-ai-ophthalmology"],
+    "orcidUrl": "https://orcid.org/0009-0002-0978-7711",
     "scholarUrl": ""
   }
 ]
