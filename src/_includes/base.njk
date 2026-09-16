@@ -53,10 +53,9 @@
                 "@type": "Person",
                 "name": "{{ person.name }}",
                 "jobTitle": "{{ person.role }}"{% if person.summary %},
-                "description": "{{ person.summary }}"{% endif %}{% if person.scholarUrl or person.orcidUrl %},
+                "description": "{{ person.summary }}"{% endif %}{% set profileLinks = person | profileLinks %}{% if profileLinks.length %},
                 "sameAs": [
-                  {% if person.scholarUrl %}"{{ person.scholarUrl | safe }}"{% endif %}{% if person.scholarUrl and person.orcidUrl %},{% endif %}
-                  {% if person.orcidUrl %}"{{ person.orcidUrl | safe }}"{% endif %}
+                  {% for link in profileLinks %}"{{ link.url | safe }}"{% if not loop.last %},{% endif %}{% endfor %}
                 ]{% endif %}
               }{% if not loop.last %},{% endif %}
               {% endfor %}

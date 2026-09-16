@@ -17,6 +17,28 @@ module.exports = function (eleventyConfig) {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
   });
+
+  eleventyConfig.addFilter("profileLinks", function (person) {
+    if (!person) {
+      return [];
+    }
+
+    const links = [];
+
+    if (person.scholarUrl) {
+      links.push({ label: "Google Scholar", url: person.scholarUrl });
+    }
+
+    if (person.orcidUrl) {
+      links.push({ label: "ORCID", url: person.orcidUrl });
+    }
+
+    if (person.researchGateUrl) {
+      links.push({ label: "ResearchGate", url: person.researchGateUrl });
+    }
+
+    return links;
+  });
   eleventyConfig.addShortcode("initials", function (name) {
     if (!name) {
       return "?";

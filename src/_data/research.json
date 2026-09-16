@@ -10,7 +10,7 @@
     "id": "clinical-ai",
     "title": "Clinical Decision Support and AI",
     "summary": "We develop and validate machine-learning methods for choroidal nevus detection and segmentation in routine fundus images, using multi-site clinical data.",
-    "linksTo": ["choroidal-nevus-ml"],
+    "linksTo": ["choroidal-nevus-ml", "octa-nevi-freckles", "explainable-ai-ophthalmology"],
     "icon": "vision"
   },
   {

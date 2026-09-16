@@ -15,12 +15,12 @@
           <p class="role-label">{{ person.role }}</p>
           <h3>{{ person.name }}</h3>
           <p>{{ person.summary or site.piSummary }}</p>
-          {% if person.scholarUrl or person.orcidUrl %}
+          {% set profileLinks = person | profileLinks %}
+          {% if profileLinks.length %}
             <div class="metadata-group">
               <p class="meta-label">Profiles</p>
               <p class="person-links">
-                {% if person.scholarUrl %}<a href="{{ person.scholarUrl }}">Google Scholar</a>{% endif %}
-                {% if person.orcidUrl %}<a href="{{ person.orcidUrl }}">ORCID</a>{% endif %}
+                {% for link in profileLinks %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
               </p>
             </div>
           {% endif %}
@@ -55,12 +55,12 @@
         {% else %}
           <p class="team-note">Project assignments can be added here when ready.</p>
         {% endif %}
-        {% if member.scholarUrl or member.orcidUrl %}
+        {% set memberLinks = member | profileLinks %}
+        {% if memberLinks.length %}
           <div class="metadata-group">
             <p class="meta-label">Profiles</p>
             <p class="person-links">
-              {% if member.scholarUrl %}<a href="{{ member.scholarUrl }}">Google Scholar</a>{% endif %}
-              {% if member.orcidUrl %}<a href="{{ member.orcidUrl }}">ORCID</a>{% endif %}
+              {% for link in memberLinks %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
             </p>
           </div>
         {% endif %}
