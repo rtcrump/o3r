@@ -12,8 +12,8 @@
       <article class="pi-card">
         <div class="initials-badge">{% initials person.name %}</div>
         <div class="pi-copy">
-          <p class="role-label">{{ person.role }}</p>
           <h3>{{ person.name }}</h3>
+          <p class="role-label">{{ person.role }}</p>
           <p>{{ person.summary or site.piSummary }}</p>
           {% set profileLinks = person | profileLinks %}
           {% if profileLinks.length %}
@@ -34,7 +34,7 @@
       <article class="team-card">
         <div class="team-card-top">
           <div class="initials-badge">{% initials member.name %}</div>
-          <div>
+          <div class="team-card-copy">
             <h3>{{ member.name }}</h3>
             <p class="role-label">{{ member.role }}</p>
           </div>
