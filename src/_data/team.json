@@ -47,6 +47,14 @@
     "scholarUrl": ""
   },
   {
+    "id": "ethan-chow",
+    "name": "Ethan Chow",
+    "role": "Medical Student, University of Alberta - Class of 2030",
+    "projects": ["aobp-registry"],
+    "orcidUrl": "https://orcid.org/0000-0002-1103-9272",
+    "scholarUrl": ""
+  },
+  {
     "id": "emmet-soibelman",
     "name": "Emmet Soibelman",
     "role": "Undergraduate Student",
