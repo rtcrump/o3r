@@ -16,8 +16,8 @@
   {
     "id": "perioperative-systems",
     "title": "Perioperative Systems",
-    "summary": "We translate perioperative evidence into practical protocols for ocular oncology surgery, including enhanced recovery and prehabilitation work designed for clinical implementation.",
-    "linksTo": ["eras-ocular-oncology", "pre-ras"],
+    "summary": "We translate perioperative evidence into practical protocols for ocular oncology surgery, including enhanced recovery designed for clinical implementation.",
+    "linksTo": ["eras-ocular-oncology"],
     "icon": "pathway"
   },
   {
