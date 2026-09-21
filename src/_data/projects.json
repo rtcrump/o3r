@@ -78,14 +78,6 @@
     "tags": ["Explainable AI", "Ophthalmology", "Machine learning"]
   },
   {
-    "id": "pre-ras",
-    "title": "Pre-RAS",
-    "summary": "Development of a structured preparation and recovery-planning program for uveal melanoma patients undergoing ocular oncology care.",
-    "status": "In development",
-    "link": "",
-    "tags": ["Prehabilitation", "Surgery", "Recovery"]
-  },
-  {
     "id": "textbook-outcomes",
     "title": "Textbook Outcomes",
     "summary": "Benchmark development for defining high-quality ocular oncology surgical care using outcomes that are clinically meaningful, measurable, and comparable.",
