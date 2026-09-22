@@ -61,5 +61,12 @@
     "projects": ["explainable-ai-ophthalmology"],
     "orcidUrl": "https://orcid.org/0009-0002-0978-7711",
     "scholarUrl": ""
+  },
+  {
+    "id": "josh-huang",
+    "name": "Josh Huang",
+    "role": "Medical Student - Class of 2027",
+    "projects": ["ultraviolet-radiation"],
+    "scholarUrl": ""
   }
 ]
