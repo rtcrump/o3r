@@ -1,3 +1,5 @@
+const { createHash } = require("crypto");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
@@ -39,6 +41,12 @@ module.exports = function (eleventyConfig) {
 
     return links;
   });
+
+  eleventyConfig.addFilter("accentIndex", function (id) {
+    const digest = createHash("md5").update(String(id || "")).digest("hex");
+    return Number.parseInt(digest.slice(0, 8), 16) % 4;
+  });
+
   eleventyConfig.addShortcode("initials", function (name) {
     if (!name) {
       return "?";

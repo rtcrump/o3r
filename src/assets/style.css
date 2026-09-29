@@ -505,6 +505,23 @@ h3 {
 .project-chip-list {
   margin-top: auto;
 }
+
+.research-card .chip-list,
+.team-card .chip-list,
+.research-card .chip-list li,
+.team-card .chip-list li {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.research-card .project-chip,
+.team-card .project-chip {
+  max-width: 100%;
+  height: auto;
+  line-height: 1.35;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
 .project-list,
 .publication-list {
   display: grid;
@@ -654,12 +671,20 @@ h3 {
   letter-spacing: 0;
 }
 
-.team-card:nth-child(3n + 1) .initials-badge {
-  background: var(--coral);
+.team-card .initials-accent-0 {
+  background: var(--red);
 }
 
-.team-card:nth-child(3n + 2) .initials-badge {
-  background: #9fe3dd;
+.team-card .initials-accent-1 {
+  background: var(--orange);
+}
+
+.team-card .initials-accent-2 {
+  background: var(--gold);
+}
+
+.team-card .initials-accent-3 {
+  background: var(--green);
 }
 
 .role-label {
