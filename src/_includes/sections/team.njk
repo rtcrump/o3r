@@ -33,7 +33,7 @@
     {% for member in members %}
       <article class="team-card">
         <div class="team-card-top">
-          <div class="initials-badge">{% initials member.name %}</div>
+          <div class="initials-badge initials-accent-{{ member.id | accentIndex }}">{% initials member.name %}</div>
           <div class="team-card-copy">
             <h3>{{ member.name }}</h3>
             <p class="role-label">{{ member.role }}</p>

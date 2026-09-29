@@ -49,7 +49,7 @@
   },
   {
     "id": "octa-nevi-freckles",
-    "title": "OCTa in Differentiating Ocular Nevi From Freckles",
+    "title": "Differentiating Ocular Nevi From Freckles",
     "summary": "A study using optical coherence tomography angiography to distinguish ocular nevi from freckles.",
     "status": "In progress",
     "link": "",
@@ -64,19 +64,19 @@
     "tags": ["Explainable AI", "Ophthalmology", "Machine learning"]
   },
   {
-    "id": "textbook-outcomes",
-    "title": "Textbook Outcomes",
-    "summary": "Benchmark development for defining high-quality ocular oncology surgical care using outcomes that are clinically meaningful, measurable, and comparable.",
-    "status": "In development",
-    "link": "",
-    "tags": ["Quality", "Benchmarks", "Outcomes"]
-  },
-  {
     "id": "ultraviolet-radiation",
     "title": "Ultraviolet Radiation",
     "summary": "A study testing the association between ultraviolet radiation exposure and the development of uveal melanoma.",
     "status": "In progress",
     "link": "",
     "tags": ["Prevention", "Uveal melanoma", "Ultraviolet radiation"]
+  },
+  {
+    "id": "community-triage",
+    "title": "Rethinking Community Triage of Choroidal Melanocytic Lesions",
+    "summary": "Examining emerging molecular evidence and real-world referral patterns to identify opportunities for clearer, evidence-based community triage of choroidal melanocytic lesions.",
+    "status": "In progress",
+    "link": "",
+    "tags": ["Community triage", "Referral pathways", "Choroidal lesions"]
   }
 ]
