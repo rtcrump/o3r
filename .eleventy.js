@@ -39,6 +39,10 @@ module.exports = function (eleventyConfig) {
       links.push({ label: "ResearchGate", url: person.researchGateUrl });
     }
 
+    if (person.linkedinUrl) {
+      links.push({ label: "LinkedIn", url: person.linkedinUrl });
+    }
+
     return links;
   });
 
